@@ -24,7 +24,7 @@ var getPrice = function(name, copies) {
     var bookName = name.title;
     var bookPrice = name.price;
     var purchasedCopies = copies;
-    var totalPriceBeforeTax = name.price * copies;
+    var totalPriceBeforeTax = bookPrice * copies;
     var stockCount = name.numberofCopies - copies
 
     bookPurchased.push(bookName);
@@ -38,7 +38,7 @@ var getPrice = function(name, copies) {
 var calculateTax = function() {
     var tax = (bookPurchased[3] * 10  ) / 100;
     var pricePlusTax = bookPurchased[3] + tax;
-    return pricePlusTax;
+    return pricePlusTax.toFixed(2);
 }
 
 var checkoutInfo = function(customerName) {
@@ -52,6 +52,6 @@ var checkoutInfo = function(customerName) {
 
 
 
-getPrice(lordOfTheRings, 3);
+getPrice(lordOfTheRings, 2);
 calculateTax();
 checkoutInfo('Jordan Books')
