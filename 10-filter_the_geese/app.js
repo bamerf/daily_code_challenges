@@ -15,19 +15,21 @@ var words = ["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse"
 
 var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
 
-var filtered = []
+// for (i = 0; i < words.length; i++) {
+//   for (j = 0; j < geese.length; j++) {
+//     if (words[i] === geese[j]) {
+//       filtered.push(words[i])
+//     }
+//   }
+// }
 
-for (i = 0; i < words.length; i++) {
-  for (j = 0; j < geese.length; j++) {
-    if (words[i] === geese[j]) {
-      filtered.push(words[i])
-    }
-  }
-}
+// for (i = 0; i < filtered.length; i++) {
+//   var indexOfWords = words.indexOf(filtered[i])
+//   words.splice(indexOfWords, 1)
+// }
 
-for (i = 0; i < filtered.length; i++) {
-  var indexOfWords = words.indexOf(filtered[i])
-  words.splice(indexOfWords, 1)
-}
+var filtered = words.filter(function(bird) {
+  return geese.indexOf(bird) === -1
+})
 
-console.log(words)
+console.log(filtered)
