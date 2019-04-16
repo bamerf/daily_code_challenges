@@ -1,18 +1,16 @@
 console.log('The Board')
 
-var char = '#'
 var space = ' '
-var size = 8;
 
-var createPattern = function(size) {
-  for (i = 0; i < 8; i++) {
-    if (i % 2 === 0) {
-      var charFirst = char + space;
-      console.log(charFirst.repeat(size))
+var createPattern = function(size, symbol) {
+  for (row = 0; row < size; row++) {
+    if (row % 2 === 0) {
+      var symbolFirst = symbol + space;
+      console.log(symbolFirst.repeat(size))
     } else {
-      var SpaceFirst = space + char;
-      console.log(SpaceFirst.repeat(size))
+      var spaceFirst = space + symbol;
+      console.log(spaceFirst.repeat(size))
     }
   }
 }
-createPattern(size);
+createPattern(8, '|');
