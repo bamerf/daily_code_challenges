@@ -8,6 +8,7 @@ loop do
     puts "Woah, chill out!"
   elsif user_input.include?("Daniel")
     puts "Fine"
-  else puts "Whatever"
+  else 
+    puts "Whatever"
   end
 end
