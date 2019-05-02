@@ -4,7 +4,7 @@ def even_multiples(numbers)
 
   numbers.each do |number|
 
-    if number % 5 == 0 || number.even?
+    if number % 5 == 0 && number.even?
 
       sorted_numbers << number
 
@@ -12,8 +12,8 @@ def even_multiples(numbers)
 
   end
 
-  p sorted_numbers
+  sorted_numbers
 
 end
 
-even_multiples([1, 2, 4, 5, 10, 25, 44, 45, 46, -4, -5])
+p even_multiples([14, 5, 7, 2, 25, 10, -4, 3, 3, 25, 2, 6, 5])
