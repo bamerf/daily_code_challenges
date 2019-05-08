@@ -46,15 +46,15 @@ var holyGrailMap = [
 ];
 
 
-function treasureFinder(map, key) {
+function treasureFinder(map, treasure) {
   
   arraysIndex = []
 
-  map.forEach(function(array) {
-    array.forEach(function(innerArray){
-      if (innerArray === key) {
-        arraysIndex.push(map.indexOf(array))
-        arraysIndex.push(array.indexOf(innerArray))
+  map.forEach(function(outerArray) {
+    outerArray.forEach(function(innerArray){
+      if (innerArray === treasure) {
+        arraysIndex.push(map.indexOf(outerArray))
+        arraysIndex.push(outerArray.indexOf(innerArray))
       }
     })
   })
