@@ -84,4 +84,44 @@ turn << deal_card
 burn_card()
 river << deal_card
 
-binding.pry
+puts ""
+puts "Your hand is #{player[0]} and #{player[1]}"
+puts ""
+puts "CPU hand is #{cpu_1[0]} and #{cpu_1[1]}"
+
+case player_count
+when 3
+  puts "CPU_2 hand is #{cpu_2[0]} and #{cpu_2[1]}"
+when 4
+  puts "CPU_2 hand is #{cpu_2[0]} and #{cpu_2[1]}"
+  puts "CPU_3 hand is #{cpu_3[0]} and #{cpu_3[1]}"
+when 5
+  puts "CPU_2 hand is #{cpu_2[0]} and #{cpu_2[1]}"
+  puts "CPU_3 hand is #{cpu_3[0]} and #{cpu_3[1]}"
+  puts "CPU_4 hand is #{cpu_4[0]} and #{cpu_4[1]}"
+when 6
+  puts "CPU_2 hand is #{cpu_2[0]} and #{cpu_2[1]}"
+  puts "CPU_3 hand is #{cpu_3[0]} and #{cpu_3[1]}"
+  puts "CPU_4 hand is #{cpu_4[0]} and #{cpu_4[1]}"
+  puts "CPU_5 hand is #{cpu_5[0]} and #{cpu_5[1]}"
+when 7
+  puts "CPU_2 hand is #{cpu_2[0]} and #{cpu_2[1]}"
+  puts "CPU_3 hand is #{cpu_3[0]} and #{cpu_3[1]}"
+  puts "CPU_4 hand is #{cpu_4[0]} and #{cpu_4[1]}"
+  puts "CPU_5 hand is #{cpu_5[0]} and #{cpu_5[1]}"
+  puts "CPU_6 hand is #{cpu_6[0]} and #{cpu_6[1]}"
+when 8
+  puts "CPU_2 hand is #{cpu_2[0]} and #{cpu_2[1]}"
+  puts "CPU_3 hand is #{cpu_3[0]} and #{cpu_3[1]}"
+  puts "CPU_4 hand is #{cpu_4[0]} and #{cpu_4[1]}"
+  puts "CPU_5 hand is #{cpu_5[0]} and #{cpu_5[1]}"
+  puts "CPU_6 hand is #{cpu_6[0]} and #{cpu_6[1]}"
+  puts "CPU_7 hand is #{cpu_7[0]} and #{cpu_7[1]}"
+end
+
+puts ""
+puts "Flop is #{flop[0]}, #{flop[1]} and #{flop[2]}"
+puts ""
+puts "Turn is #{turn[0]}"
+puts ""
+puts "River is #{river[0]}"
