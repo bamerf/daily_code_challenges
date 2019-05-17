@@ -1,0 +1,25 @@
+ul {
+  font-size: 1rem;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  text-align: left;
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+li {
+  font-size: 1rem;
+  background-color: rgb(107, 107, 107);
+  color: rgb(206, 206, 206);
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  border: none;
+  outline: none;
+  list-style: none
+}
+
