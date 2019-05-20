@@ -1,2 +1,2 @@
 # smallCode
-Small code practices with JS
+Small program codes using Vanilla JS and Ruby
