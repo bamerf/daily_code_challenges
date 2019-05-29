@@ -16,15 +16,11 @@ lines.shift
 
 def suspect_info(name, product, unit_price, units)
 
-  
-
   if @suspect_info.key?(name)
     @suspect_info[name]
   else 
     @suspect_info[name] = []
   end
-
-  
 
   info = {}
   info[:product] = product
