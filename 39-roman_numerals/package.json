@@ -1,0 +1,16 @@
+{
+  "name": "39-roman_numerals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "roman_numberals.js",
+  "dependencies": {
+    "jest": "^24.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
