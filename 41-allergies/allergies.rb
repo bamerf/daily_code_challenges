@@ -25,4 +25,4 @@ def user_allergies(score)
   return user_allergies
 end
 
-p user_allergies(34)
+p user_allergies(66)
