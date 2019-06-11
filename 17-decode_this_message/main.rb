@@ -16,4 +16,4 @@ def decode_encode (message, shift_num)
   return result.capitalize
 end
 
-p decode_encode("Shat bl t uxtnmbyne zbke, tgw oxkr ihk khh", -7)
+p decode_encode("ihk khh khodeti", -7)
