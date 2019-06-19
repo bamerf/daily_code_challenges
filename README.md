@@ -1,4 +1,4 @@
-# Small Code
+# Daily Code Challenge
 
 ## Desciption
 
