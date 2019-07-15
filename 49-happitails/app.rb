@@ -1,5 +1,4 @@
 require_relative 'animal'
-require 'pry'
 
 shelter = []
 option = nil
